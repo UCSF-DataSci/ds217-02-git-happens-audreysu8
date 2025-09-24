@@ -20,7 +20,7 @@ EOF
 cat > data/students.csv << 'EOF'
 name,age,grade,subject
 Audrey,22,85,Math
-Bob,19,92,Science
+Bob,19,92,Science./setup_project.sh
 Charlie,21,78,English
 Diana,20,88,Math
 Eve,22,95,Science
@@ -30,7 +30,7 @@ Henry,20,76,Science
 EOF
 
 echo "Now, I'll create the Python templates"
-cat <<EOL > src/main.py
+cat <<EOL > src/data_analysis.py
 # TODO: Need to implement main script
 def main():
     print("Hello, world!")
@@ -39,9 +39,11 @@ if __name__ == "__main__":
     main()
 EOL
 
-cat <<EOL > src/utils.py
+cat <<EOL > src/data_analysis_functions.py
 # TODO: Need to add utility functions
 def sample_function():
+    pass
+def sample_function_2():
     pass
 EOL
 
