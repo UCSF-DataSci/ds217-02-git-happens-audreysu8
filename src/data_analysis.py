@@ -41,13 +41,15 @@ def save_report(report, filename):
     with open(filename, 'w') as f:
         f.write(report)
 
-if __name__ == "__main__":
+def main():
     students = load_students('data/students.csv')
     print("Loaded student data:")
     for student in students:
         print(student)
     save_report(generate_report(), 'output/analysis_report.txt')
     
+if __name__ == "__main__":
+    main()
 
 
 
