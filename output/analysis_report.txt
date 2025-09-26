@@ -1,0 +1,1 @@
+Average grade of students: 86.0 and number of students enrolled in Math: 2
