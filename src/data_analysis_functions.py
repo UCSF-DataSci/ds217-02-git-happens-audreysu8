@@ -104,12 +104,16 @@ def save_report(report, filename):
     with open(filename, 'a') as f:
         f.write(report)
 
-if __name__ == "__main__":
+def main():
     students = load_csv('data/students.csv')
     analyze_data(students)
     analyze_grade_distribution(students)
     generate_report()
     save_report(generate_report(), 'output/analysis_report.txt')
+
+
+if __name__ == "__main__":
+    main()
 
 
 
