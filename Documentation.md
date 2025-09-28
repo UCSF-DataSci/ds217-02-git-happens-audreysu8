@@ -16,14 +16,6 @@ datasci-week02-integration/ ├── .github │ ├──test │ │ └─�
 - **Data Processing**: Python programs for analyzing student grades
 - **Git Workflow**: Developing features on separate branches and merging them into `main`
 
-# Extra Files
-- fibonacci_iterative.py
-- hello_universe.py
-- lucky_number.py
-- password.py
-- sheep.py
-These files are not part of the main project code but were created to test out Git's functionality and what happens when you merge branches.
-
 ## Usage
 1. Run `./setup_project.sh` to initialize the project layout
 2. Execute `python src/data_analysis.py` for initial analysis
