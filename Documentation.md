@@ -9,7 +9,7 @@ output: github_document
 The purpose of this project is to combine three skills — using Git for version control, using the command line to automate setup, and writing Python code to process data into one assignment.
 
 ## Project Structure
-datasci-week02-integration/ ├── .github │ ├──test │ │ └── requirements.txt │ └── test_assignment.py ├── workflows │ └── classroom.yml ├── data/ │ ├── students.csv └── output/ └── analysis_report.txt ├── src/ │ ├── data_analysis.py │ └── data_analysis_functions.py├── .gitignore 
+datasci-week02-integration/ ├── data/ │ ├── students.csv └── output/ └── analysis_report.txt ├── src/ │ ├── data_analysis.py │ └── data_analysis_functions.py ├── .gitignore ├── Documentation.md ├── README.md  ├── TIPS.md ├── requirements.txt ├── setup_project.sh 
 
 ## Features
 - **Project Scaffold**: Here, I do automatic project initialization using `setup_project.sh`
