@@ -31,20 +31,33 @@ EOF
 
 echo "Now, I'll create the Python templates"
 cat <<EOL > src/data_analysis.py
-# TODO: Need to implement main script
+# TODO: Need to add data analysis here
+def sample_function():
+    pass
+def sample_function_2():
+    pass
+
+# TODO: Then add a main function to orchestrate analysis
 def main():
-    print("Hello, world!")
+    pass
 
 if __name__ == "__main__":
     main()
 EOL
 
 cat <<EOL > src/data_analysis_functions.py
-# TODO: Need to add utility functions
+# TODO: Need to add extra data analysis functions here
 def sample_function():
     pass
 def sample_function_2():
     pass
+
+# TODO: Then add a main function to orchestrate analysis
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
 EOL
 
 # 5️⃣ Make the script itself executable
