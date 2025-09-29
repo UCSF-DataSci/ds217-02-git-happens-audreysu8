@@ -20,7 +20,7 @@ EOF
 cat > data/students.csv << 'EOF'
 name,age,grade,subject
 Alice,20,85,Math
-Bob,19,92,Science./setup_project.sh
+Bob,19,92,Science
 Charlie,21,78,English
 Diana,20,88,Math
 Eve,22,95,Science
