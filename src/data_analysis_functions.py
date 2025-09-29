@@ -52,8 +52,9 @@ def analyze_data(students):
 
     for student in students:
         subject = student["subject"]
-        if subject in subject_counts:
+        if subject in subject_counts.keys():
             subject_counts[subject] += 1 
+        else:
             subject_counts[subject] = 1 
     
     student_dictionary["subject_counts"] = subject_counts

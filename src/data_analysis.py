@@ -24,8 +24,14 @@ def calculate_average_grade(students):
     total_grade = 0
     for student in students:
         total_grade += int(student["grade"])
-    average = total_grade / (len(students) -1 )
+    average = total_grade / len(students)
     return average
+
+def calculate_total_studens(students):
+    total_students = 0
+    for student in students:
+        total_students += 1
+    return total_students
 
 def count_math_students(students):
     count = sum(1 for student in students if student["subject"] =='Math')
@@ -33,9 +39,10 @@ def count_math_students(students):
 
 def generate_report():
     students = load_students('data/students.csv')
+    total_students = calculate_total_studens(students)
     avg_grade = calculate_average_grade(students)
     math_count = count_math_students(students)
-    return f"Analysis: Average grade of students: {avg_grade:.1f} and number of students enrolled in Math: {math_count}"
+    return f"Analysis: Average grade of students: {avg_grade:.1f}.\nTotal number of students: {total_students}.\nNumber of students enrolled in Math: {math_count}."
 
 def save_report(report, filename):
     with open(filename, 'w') as f:
