@@ -1,11 +1,9 @@
-import os
 def load_data(filename):
     """
-    Read a CSV file and return a list of student dictionaries.
+    Checks if file is .csv or not. If it is, read a CSV file and return a list of student dictionaries.
     """
-    ext = os.path.splitext(filename)[1].lower()
-    if ext != ".csv":
-        raise ValueError(f"Unsupported file extension: {ext}")
+    if not filename.endswith(".csv"):
+        raise ValueError("Unsupported file extension. Please provide a .csv file.")
     students = []
     with open(filename, "r") as file:
         lines = file.readlines()
