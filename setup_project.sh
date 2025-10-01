@@ -70,7 +70,7 @@ def count_math_students(students):
     # TODO: Count students where subject is Math
     pass
 
-def generate_report(total, average, math_count):
+def generate_report():
     """Generate report string."""
     # TODO: Create formatted string with results
     # TODO: Use f-strings with .1f for decimals
@@ -115,6 +115,11 @@ def analyze_grade_distribution(grades):
     # TODO: Count A (90-100), B (80-89), etc.
     pass
 
+def generate_report():
+    """Generate comprehensive report."""
+    # TODO: Create formatted string with results.
+    pass
+    
 def save_results(results, filename):
     """Save detailed results."""
     # TODO: Format and write comprehensive report
