@@ -99,9 +99,9 @@ def generate_report():
     analyzed_grade_distribtion = analyze_grade_distribution(students)
     return f"\nDictionary with multiple statistics: {analyzed_data} and Dictionary with grade distribution: {analyzed_grade_distribtion}"
 
-def save_results(report, filename):
+def save_results(results, filename):
     with open(filename, 'a') as f:
-        f.write(report)
+        f.write(results)
 
 def main():
     students = load_csv('data/students.csv')
