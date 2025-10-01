@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 def load_students(filename):
     """
@@ -55,6 +56,48 @@ def main():
         print(student)
     save_report(generate_report(), 'output/analysis_report.txt')
     
+=======
+def load_students(filename):
+    """Load student data from CSV."""
+    # TODO: Open file, read lines, skip header
+    # TODO: Split each line by comma
+    # TODO: Return list of student data
+    pass
+
+def calculate_average_grade(students):
+    """Calculate average grade."""
+    # TODO: Sum all grades
+    # TODO: Divide by number of students
+    pass
+
+def calculate_total_students(students):
+    """Calculate total number of students."""
+    # TODO: Sum all students
+
+def count_math_students(students):
+    """Count students in Math."""
+    # TODO: Count students where subject is Math
+    pass
+
+def generate_report():
+    """Generate report string."""
+    # TODO: Create formatted string with results
+    # TODO: Use f-strings with .1f for decimals
+    pass
+
+def save_report(report, filename):
+    """Save report to file."""
+    # TODO: Create output directory if needed
+    # TODO: Write report to file
+    pass
+
+def main():
+    # TODO: Load data
+    # TODO: Calculate statistics
+    # TODO: Generate and save report
+    pass
+
+>>>>>>> feature/project-scaffold
 if __name__ == "__main__":
     main()
 
