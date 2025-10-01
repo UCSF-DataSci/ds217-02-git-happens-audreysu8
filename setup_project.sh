@@ -48,14 +48,44 @@ EOF
 
 echo "Now, I'll create the Python templates"
 cat <<EOL > src/data_analysis.py
-# TODO: Need to add data analysis here
-def sample_function():
-    pass
-def sample_function_2():
+def load_students(filename):
+    """Load student data from CSV."""
+    # TODO: Open file, read lines, skip header
+    # TODO: Split each line by comma
+    # TODO: Return list of student data
     pass
 
-# TODO: Then add a main function to orchestrate analysis
+def calculate_average_grade(students):
+    """Calculate average grade."""
+    # TODO: Sum all grades
+    # TODO: Divide by number of students
+    pass
+
+def calculate_total_students(students):
+    """Calculate total number of students."""
+    # TODO: Sum all students
+
+def count_math_students(students):
+    """Count students in Math."""
+    # TODO: Count students where subject is Math
+    pass
+
+def generate_report(total, average, math_count):
+    """Generate report string."""
+    # TODO: Create formatted string with results
+    # TODO: Use f-strings with .1f for decimals
+    pass
+
+def save_report(report, filename):
+    """Save report to file."""
+    # TODO: Create output directory if needed
+    # TODO: Write report to file
+    pass
+
 def main():
+    # TODO: Load data
+    # TODO: Calculate statistics
+    # TODO: Generate and save report
     pass
 
 if __name__ == "__main__":
@@ -63,14 +93,35 @@ if __name__ == "__main__":
 EOL
 
 cat <<EOL > src/data_analysis_functions.py
-# TODO: Need to add extra data analysis functions here
-def sample_function():
-    pass
-def sample_function_2():
+def load_data(filename):
+    """Load data from CSV file."""
+    # TODO: Check file extension
+    # TODO: Call appropriate loader
     pass
 
-# TODO: Then add a main function to orchestrate analysis
+def load_csv(filename):
+    """Load CSV data."""
+    # TODO: Same technique as basic script
+    pass
+
+def analyze_data(students):
+    """Analyze student data."""
+    # TODO: Calculate multiple statistics
+    # TODO: Return dictionary of results
+    pass
+
+def analyze_grade_distribution(grades):
+    """Count grades by letter grade."""
+    # TODO: Count A (90-100), B (80-89), etc.
+    pass
+
+def save_results(results, filename):
+    """Save detailed results."""
+    # TODO: Format and write comprehensive report
+    pass
+
 def main():
+    # TODO: Orchestrate the analysis
     pass
 
 if __name__ == "__main__":
