@@ -20,7 +20,7 @@ def count_math_students(students):
     # TODO: Count students where subject is Math
     pass
 
-def generate_report(total, average, math_count):
+def generate_report():
     """Generate report string."""
     # TODO: Create formatted string with results
     # TODO: Use f-strings with .1f for decimals

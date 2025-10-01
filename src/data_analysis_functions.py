@@ -20,6 +20,11 @@ def analyze_grade_distribution(grades):
     # TODO: Count A (90-100), B (80-89), etc.
     pass
 
+def generate_report():
+    """Generate comprehensive report."""
+    # TODO: Create formatted string with results.
+    pass
+    
 def save_results(results, filename):
     """Save detailed results."""
     # TODO: Format and write comprehensive report
