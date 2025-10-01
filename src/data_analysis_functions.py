@@ -93,13 +93,13 @@ def analyze_grade_distribution(students):
 
 print(analyze_grade_distribution(students))
 
-def generate_report():
-    students = load_csv('data/students.csv')
-    analyzed_data = analyze_data(students)
-    analyzed_grade_distribtion = analyze_grade_distribution(students)
-    return f"\nDictionary with multiple statistics: {analyzed_data} and Dictionary with grade distribution: {analyzed_grade_distribtion}"
-
-def save_results(report, filename):
+def save_results(filename):
+    def generate_report():
+        students = load_csv('data/students.csv')
+        analyzed_data = analyze_data(students)
+        analyzed_grade_distribtion = analyze_grade_distribution(students)
+        return f"\nDictionary with multiple statistics: {analyzed_data} and Dictionary with grade distribution: {analyzed_grade_distribtion}"
+    report = generate_report()
     with open(filename, 'a') as f:
         f.write(report)
 
@@ -107,8 +107,7 @@ def main():
     students = load_csv('data/students.csv')
     analyze_data(students)
     analyze_grade_distribution(students)
-    generate_report()
-    save_results(generate_report(), 'output/analysis_report.txt')
+    save_results('output/analysis_report.txt')
 
 
 if __name__ == "__main__":
