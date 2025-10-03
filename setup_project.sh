@@ -61,10 +61,6 @@ def calculate_average_grade(students):
     # TODO: Divide by number of students
     pass
 
-def calculate_total_students(students):
-    """Calculate total number of students."""
-    # TODO: Sum all students
-
 def count_math_students(students):
     """Count students in Math."""
     # TODO: Count students where subject is Math
